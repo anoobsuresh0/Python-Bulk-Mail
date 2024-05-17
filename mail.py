@@ -12,6 +12,7 @@ df = pd.read_excel('companies.xlsx')
 sender_email = os.getenv('SENDER_EMAIL')
 password = os.getenv('PASSWORD')
 
+
 def send_email(to_email, subject, body, attachment_path=None):
     msg = MIMEMultipart()
     msg['From'] = sender_email
